@@ -1,0 +1,1977 @@
+<!-- start of script !-->
+<!DOCTYPE html>
+<HTML lang="en"><!-- Master branch !-->
+<!-- Start of Metadata !-->
+<META lang="en">
+	<meta charset="UTF-16"><!-- The Encoding should be declared within the first 1024 bytes of an HTML document. If not, most browsers won't accept it, and it could result in garbled/Mojibaked text. The declaration here was made and finished within the first 151 characters/bytes of the document !-->
+	<!-- Other options !-->
+	<!-- meta charset="ANSI"> !--> <!-- page encoding minimum !-->
+	<!-- meta charset="ASCII"> !--> <!-- page encoding  !-->
+	<!-- meta charset="UC-2"> !--> <!-- page encoding  !-->
+	<!-- meta charset="UTF-8"> !--> <!-- page encoding  !-->
+	<!--<meta charset="UTF-16"> !--> <!-- Page encoding main !-->
+	<!-- meta charset="UTF-32"> !--> <!-- page encoding  !-->
+	<meta lang="en" name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport detection for average computer, and mobile !-->
+	<meta lang="en" name="description" content="Test out the SNU Video player here."><!-- Description search engines display when searching the site via search !-->
+	<meta lang="en" name="keywords" content="SNU, Video, Player, SNU_Video, Home, Keyword6, Keyword7, Keyword8"><!-- Search keywords (don't put too many, anywhere between 1 and 8 is fine) !-->
+	<meta lang="en" name="author" content="Sean Patrick Myrick/SeanPM, SeanWallWalla/SNU, SNU.net, SNU">
+</META>
+<!-- End of Metadata !-->
+<!-- Language tags
+en = English
+ar = Arabic
+fr = French
+ru = Russian
+de = German
+es = Spanish
+ja = Japanese
+zh = Chinese
+ko = Korean
+la = Latin
+it = Italian
+haw = Hawaiian
+More coming soon
+!-->
+<BODY><!-- Submaster branch !-->
+<head> <!-- external and internal resources needed for page !-->
+<!-- .ico !--><!-- 021!--<!-- Favicon !--><link rel="icon" href="YourFaviconName.ico" type="image/x-icon"/><!-- The favicon for this page !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .js !--> <!-- 02 !--<!-- JavaScript file 1 !--><!--<script type="text/javascript" src="ExpandAll_ScriptV1.00.js"></script><!-- the script needed to automatically expand all detail tags !--><!-- external resource !-->
+<!-- .js !--><!-- 03 !--><!-- JavaScript file !--><!--<script type="text/javascript" src="Sourcebase_SNUScriptStarter_V1.00.js"></script><!-- The full JavaScript SNU sheet, modify to your liking !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 04 !--<!-- Stylesheet 1 !--><!--<link rel="stylesheet" type="text/css" href="2DStart_Style_StickySideBarVersion1.01.css"> <!-- The stylesheet for the sidebar !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 05 !--<!-- Stylesheet 2 !--><!--<link rel="stylesheet" type="text/css" href="TOP_NAVIGATION_BAR_V1.0.css"> <!-- The stylesheet for the top navigation pane !--><!-- external resource !-->
+<!-- .css !--><!-- 06 !--<!-- Stylesheet 3 !--><!--<link rel="stylesheet" type="text/css" href="Sourcebase_SNUScriptStarter_V1.01.css"> <!-- Make sure to modify this CSS to your liking !--><!-- The stylesheet for the white text !--><!-- external resource !-->
+</head>
+<HEAD>
+<!-- MERGED to top, UTF declaration MUST be made within first 1024 bytes of the file 
+<meta lang="en"><!-- Meta character set section !-->
+	<!-- meta charset="ANSI"> !--> <!-- page encoding minimum !-->
+	<!-- meta charset="ASCII"> !--> <!-- page encoding  !-->
+	<!-- meta charset="UC-2"> !--> <!-- page encoding  !-->
+	<!-- meta charset="UTF-8"> !--> <!-- page encoding  !-->
+	<!--<meta charset="UTF-16"> !--> <!-- Page encoding main !-->
+	<!-- meta charset="UTF-32"> !--> <!-- page encoding  !-->
+</meta><!-- End of obsolete meta character set section !-->
+<!-- Stylesheet 1 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #1 */
+/* The CSS Grid system inline stylesheet */
+/* Rule count: 2 */
+.grid-container { /* Rule 1 */
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+} /* End of rule 1 */
+.grid-item { /* Rule 2 */
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+} /* End of rule 2 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 2 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #2 */
+/* The CSS Transparent box inline stylesheet */
+/* Rule count: 3 */
+div.background { /* Rule 1 */
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+} /* End of rule 1 */
+div.transbox { /* Rule 2 */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+} /* End of rule 2 */
+div.transbox p { /* Rule 3 */
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+} /* End of rule 3 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 3 /!-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #3 */
+/* The CSS Sidebar inline stylesheet */
+/* Rule count: 5 */
+body { /* Rule 1 */
+	margin: 0;
+} /* End of rule 1 */
+ul { /* Rule 2 */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 16%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+} /* End of rule 2 */
+li a { /* Rule 3 */
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+} /* End of rule 3 */
+li a.active { /* Rule 4 */
+	background-color: #4CAF50;
+	color: white;
+} /* End of rule 4 */
+li a:hover:not(.active) { /* Rule 5 */
+	background-color: #555;
+	color: white;
+} /* End of rule 5 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 4 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #4 */
+/* The CSS Topbar (Top navigation bar) Inline stylesheet */
+/* Add a black background color to the top navigation */
+/* Rule count: 7 */
+.topnav { /* Rule 1 */
+	background-color: #333;
+	overflow: hidden;
+} /* End of rule 1 */
+/* Style the links inside the navigation bar */
+.topnav a { /* Rule 2 */
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+} /* End of rule 2 */
+/* Change the color of links on hover */
+.topnav a:hover { /* Rule 3 */
+	background-color: #ddd;
+	color: black;
+} /* End of rule 3 */
+/* Add a color to the active/current link */
+.topnav a.active { /* Rule 4 */
+	background-color: #4CAF50;
+	color: white;
+} /* End of rule 4 */
+/* Dropdown */
+.dropdown { /* Rule 5 */
+	position: relative;
+	display: inline-block;
+} /* End of rule 5 */
+.dropdown-content { /* Rule 6 */
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+} /* End of rule 6 */
+.dropdown:hover .dropdown-content { /* Rule 7 */
+  display: block;
+} /* End of rule 7 */
+/* Things to experiment with:
+* dropdown on overflow
+* Different colors
+* Stable white colored links again on topbar
+*/
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 5 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #5 */
+/* The CSS headings inline stylesheet */
+/* H1 to H6, no h1-h6, and no h06, H06 */
+/* Rule count: 6 */
+H1 { /* Rule 1 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+H2 { /* Rule 2 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+H3 { /* Rule 3 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+H4 { /* Rule 4 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+H5 { /* Rule 5 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+H6 { /* Rule 6 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+/* Decisions:
+* Should h1-h6 and h06/H06 be included? (for the webtemplate developer to decide)
+* Should this page use white text, or a different color (for the programmer to decide)
+* Should these tags use the Liberation Serif font (for the programmer to decide)
+*/
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 6 !-->
+<style type="text/css" lang="en">
+/* Inline stlyesheet #6 */
+/* The CSS Dividers, and paragraphs inline stylesheet */
+/* Rule count: 2 */
+HR { /* Rule 1 */
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+p { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+</style>
+<!-- Stylesheet 7 !-->
+<style type="text/css" lang="en">
+/* Inline stlyesheet #7 */
+/* The CSS Other rich text inline stylesheet */
+/* Rule count: 6 */
+i { /* Rule 1 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+u { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+b { /* Rule 3 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+s { /* Rule 4 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+sub { /* Rule 5 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+sup { /* Rule 6 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 8 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #8 */
+/* The CSS Details and summary inline stylesheet */
+/* Rule count: 2 */
+details { /* Rule 1 */
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+summary { /* Rule 2 */
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 9 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #9 */
+/* The CSS Progress bar inline stylesheet */
+/* Rule count: 12 */
+/* Option 1 */
+progress { /* Rule 1 */
+	display:inline-block;
+	width:190px;
+	height:20px;
+	padding:15px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+} /* End of rule 1 */
+progress::-webkit-progress-bar { /* Rule 2 */
+	height:11px;
+	width:150px;
+	margin:0 auto;
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+} /* End of rule 2 */
+progress::-webkit-progress-value { /* Rule 3 */
+	display:inline-block;
+	float:left;
+	height:11px;
+	margin:0px -10px 0 0;
+	background: #F70;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+} /* End of rule 3 */
+progress:after { /* Rule 4 */
+	margin:-26px 0 0 -7px;
+	padding:0;
+	display:inline-block;
+} /* End of rule 4 */
+/* Option 2 */
+#progress { /* Rule 5 */
+	background: #333;
+	border-radius: 13px;
+	height: 20px;
+	width: 300px;
+	padding: 3px;
+} /* End of rule 5 */
+#progress:after { /* Rule 6 */
+	content: '';
+	display: block;
+	background: orange;
+	width: 50%;
+	height: 100%;
+	border-radius: 9px;
+} /* End of rule 6 */
+/* Option 3 */
+#progressbar { /* Rule 7 */
+	background-color: black;
+	border-radius: 13px;
+	/* (height of inner div) / 2 + padding */
+	padding: 3px;
+} /* End of rule 7 */
+#progressbar>div { /* Rule 8 */
+	background-color: orange;
+	width: 40%;
+	/* Adjust with JavaScript */
+	height: 20px;
+	border-radius: 10px;
+} /* End of rule 8 */
+/* Option 4 */
+/* Step 1 */
+progress, /* All HTML5 progress enabled browsers */
+{ /* Rule 9 */
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+} /* End of rule 9 */
+/* Step 2 */
+/* IE10 */
+progress { /* Rule 10 */
+	color: black;
+} /* End of rule 10 */
+/* Firefox */
+progress::-moz-progress-bar { /* Rule 11 */
+	background: black;
+} /* End of rule 11 */
+/* Chrome */
+progress::-webkit-progress-value { /* Rule 12 */
+	background: black;
+} /* End of rule 12 */
+/* Step 3 */
+progress[value^="9"]::-moz-progress-bar { /* Rule 13 */
+background-color : red;
+} /* End of rule 13 */
+/* One of these doesn't seem to be getting counted as a rule. Firefox counts 12, but I count 13. I may have made an error somewhere. */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 10 !-->
+<style type="text/css" lang="en" lang="en">
+/* Inline stylesheet #10 */
+/* The CSS Rich text section 2 inline stylesheet */
+/* Rule count: 14 */
+p { /* Rule 1 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+P { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+b { /* Rule 3 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+B { /* Rule 4 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+u { /* Rule 5 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+U { /* Rule 6 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+s { /* Rule 7 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 7 */
+S { /* Rule 8 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 8 */
+i { /* Rule 9 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 9 */
+I { /* Rule 10 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 10 */
+sub { /* Rule 11 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 11 */
+SUB { /* Rule 12 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 12 */
+sup { /* Rule 13 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 13 */
+SUP { /* Rule 14 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 14 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 11 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #11 */
+/* The CSS Form section inline stylesheet */
+/* Rule count: 4 */
+form { /* Rule 1 */
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+FORM { /* Rule 2 */
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+/* specialized button hyperlink section */
+a { /* Rule 3 */
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+A { /* Rule 4 */
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 13 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #13 */
+/* The CSS Border image inline stylesheet */
+/* Rule count: 1 */
+#borderimg { /* Rule 1 */
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 round;
+} /* End of rule 1 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<style type="Text/css" lang="en" id="MozillaFirefox_VideoPlayerCSS">
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.w3.org/1999/xhtml");
+
+.videocontrols {
+  writing-mode: horizontal-tb;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+
+  direction: ltr;
+  /* Prevent unwanted style inheritance. See bug 554717. */
+  text-align: left;
+  list-style-image: none !important;
+  font: normal normal normal 100%/normal sans-serif !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+}
+
+.controlsContainer {
+  --clickToPlay-size: 48px;
+  --button-size: 30px;
+  --timer-size: 40px;
+  --timer-long-size: 60px;
+  --track-size: 5px;
+  --thumb-size: 13px;
+  --label-font-size: 13px;
+  --pip-toggle-bgcolor: rgb(0, 96, 223);
+  --pip-toggle-text-and-icon-color: rgb(255, 255, 255);
+  --pip-toggle-padding: 5px;
+  --pip-toggle-icon-width-height: 16px;
+  --pip-toggle-translate-x: calc(100% - var(--pip-toggle-icon-width-height) - 2 * var(--pip-toggle-padding));
+}
+.controlsContainer.touch {
+  --clickToPlay-size: 64px;
+  --button-size: 40px;
+  --timer-size: 52px;
+  --timer-long-size: 78px;
+  --track-size: 7px;
+  --thumb-size: 16px;
+  --label-font-size: 16px;
+}
+
+/* Some CSS custom properties defined here are referenced by videocontrols.js */
+.controlBar {
+  /* Do not delete: these variables are accessed by JavaScript directly.
+     see videocontrols.js and search for |-width|. */
+  --clickToPlay-width: var(--clickToPlay-size);
+  --playButton-width: var(--button-size);
+  --scrubberStack-width: 64px;
+  --muteButton-width: var(--button-size);
+  --volumeStack-width: 48px;
+  --castingButton-width: var(--button-size);
+  --closedCaptionButton-width: var(--button-size);
+  --fullscreenButton-width: var(--button-size);
+  --positionDurationBox-width: var(--timer-size);
+  --durationSpan-width: var(--timer-size);
+  --positionDurationBox-width-long: var(--timer-long-size);
+  --durationSpan-width-long: var(--timer-long-size);
+}
+
+.touch .controlBar {
+  /* Do not delete: these variables are accessed by JavaScript directly.
+     see videocontrols.js and search for |-width|. */
+  --scrubberStack-width: 84px;
+  --volumeStack-width: 64px;
+}
+
+.controlsContainer [hidden],
+.controlBar[hidden],
+.pictureInPictureToggleButton[hidden],
+.videocontrols[inDOMFullscreen] > .controlsContainer > .controlsOverlay > .pictureInPictureToggleButton {
+  display: none;
+}
+
+.controlBar[size="hidden"] {
+  display: none;
+}
+
+.controlsSpacer[hideCursor] {
+  cursor: none;
+}
+
+.controlsContainer,
+.progressContainer {
+  position: relative;
+  height: 100%;
+}
+
+.stackItem {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.statusOverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(80,80,80, .85);
+}
+
+.controlsOverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.controlsSpacerStack {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlBar {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 9px;
+  background-color: rgba(26,26,26,.8);
+}
+
+.touch .controlBar {
+  height: 52px;
+}
+
+.controlBar > .button {
+  height: 100%;
+  min-width: var(--button-size);
+  min-height: var(--button-size);
+  padding: 6px;
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  background-clip: content-box;
+  -moz-context-properties: fill;
+  fill: #ffffff;
+}
+
+.touch .controlBar > .button {
+  background-size: 24px 24px;
+}
+
+.controlBar > .button:hover {
+  fill: #48a0f7;
+}
+
+.controlBar > .button:hover:active {
+  fill: #2d89e6;
+}
+
+.playButton {
+  background-image: url(chrome://global/skin/media/pauseButton.svg);
+}
+.playButton[paused] {
+  background-image: url(chrome://global/skin/media/playButton.svg);
+}
+
+.muteButton {
+  background-image: url(chrome://global/skin/media/audioUnmutedButton.svg);
+}
+.muteButton[muted] {
+  background-image: url(chrome://global/skin/media/audioMutedButton.svg);
+}
+.muteButton[noAudio],
+.muteButton[noAudio]:hover,
+.muteButton[noAudio]:hover:active {
+  background-image: url(chrome://global/skin/media/audioNoAudioButton.svg);
+  fill: white;
+}
+.muteButton[noAudio] + .volumeStack {
+  display: none;
+}
+
+.castingButton {
+  background-image: url(chrome://global/skin/media/castingButton-ready.svg);
+}
+
+.castingButton[enabled] {
+  background-image: url(chrome://global/skin/media/castingButton-active.svg);
+}
+
+.closedCaptionButton {
+  background-image: url(chrome://global/skin/media/closedCaptionButton-cc-off.svg);
+}
+.closedCaptionButton[enabled] {
+  background-image: url(chrome://global/skin/media/closedCaptionButton-cc-on.svg);
+}
+
+.fullscreenButton {
+  background-image: url(chrome://global/skin/media/fullscreenEnterButton.svg);
+}
+.fullscreenButton[fullscreened] {
+  background-image: url(chrome://global/skin/media/fullscreenExitButton.svg);
+}
+
+.controlBarSpacer {
+  flex-grow: 1;
+}
+
+.volumeControl::-moz-range-thumb,
+.scrubber::-moz-range-thumb {
+  height: var(--thumb-size);
+  width: var(--thumb-size);
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.65));
+}
+
+.volumeControl::-moz-focus-outer,
+.scrubber::-moz-focus-outer {
+  border: 0;
+}
+
+.progressBackgroundBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressStack {
+  position: relative;
+  width: 100%;
+  height: var(--track-size);
+}
+
+.scrubberStack {
+  /* minus margin to get basis of required width */
+  min-width: calc(var(--scrubberStack-width) - 18px);
+  flex-basis: calc(var(--scrubberStack-width) - 18px);
+  flex-grow: 2;
+  flex-shrink: 0;
+  margin: 0 9px;
+}
+
+.volumeStack {
+  max-width: 60px;
+  min-width: var(--volumeStack-width);
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 6px;
+  margin-left: 4px;
+}
+
+.bufferBar,
+.progressBar,
+.scrubber,
+.volumeBackground,
+.volumeControl {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--track-size) / 2);
+  margin: 0;
+  background: none;
+  background-color: transparent;
+}
+
+.bufferBar,
+.volumeBackground {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.bufferBar::-moz-progress-bar,
+.progressBar::-moz-progress-bar,
+.volumeBackground::-moz-meter-bar {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: calc(var(--track-size) / 2);
+  background: none;
+}
+
+.scrubber:hover::-moz-range-thumb,
+.volumeControl:hover::-moz-range-thumb {
+  background-color: #48a0f7;
+}
+
+.scrubber:active::-moz-range-thumb,
+.volumeControl:active::-moz-range-thumb {
+  background-color: #2d89e6;
+}
+
+.scrubber::-moz-range-track,
+.scrubber::-moz-range-progress {
+  background-color: transparent;
+}
+
+.volumeControl::-moz-range-progress,
+.volumeControl::-moz-range-track {
+  height: var(--track-size);
+  border-radius: calc(var(--track-size) / 2);
+}
+
+.volumeControl::-moz-range-progress {
+  background-color: #ffffff;
+}
+
+.volumeControl::-moz-range-track {
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+.bufferBar::-moz-progress-bar {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: calc(var(--track-size) / 2);
+}
+
+.progressBar::-moz-progress-bar {
+  background-color: #00b6f0;
+}
+
+.textTrackList {
+  position: absolute;
+  right: 5px;
+  bottom: 45px;
+  max-width: 80%;
+  border: 1px solid #000000;
+  border-radius: 2.5px;
+  padding: 5px 0;
+  vertical-align: middle;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.touch .textTrackList {
+  bottom: 58px;
+}
+
+.textTrackList > .textTrackItem {
+  display: block;
+  width: 100%;
+  height: var(--button-size);
+  font-size: var(--label-font-size);
+  padding: 2px 10px;
+  border: none;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.textTrackList > .textTrackItem:hover {
+  background-color: #444444;
+}
+
+.textTrackList > .textTrackItem[on] {
+  color: #48a0f7;
+}
+
+.positionLabel,
+.durationLabel {
+  display: none;
+}
+
+.positionDurationBox {
+  text-align: center;
+  padding-inline-start: 1px;
+  padding-inline-end: 9px;
+  white-space: nowrap;
+  font: message-box;
+  font-size: var(--label-font-size);
+  font-size-adjust: 0.55;
+  color: #ffffff;
+}
+
+
+.duration {
+  display: inline-block;
+  white-space: pre;
+  color: #929292;
+}
+
+.statusIcon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+}
+
+/* Not showing the throbber on mobile because of conflict with m.youtube.com (see bug 1289412) */
+.controlsContainer:not(.mobile) .statusIcon[type="throbber"] {
+  background: url(chrome://global/skin/media/throbber.png) no-repeat center;
+}
+
+.controlsContainer:not(.mobile) .statusIcon[type="throbber"][stalled] {
+  background: url(chrome://global/skin/media/stalled.png) no-repeat center;
+}
+
+.statusIcon[type="error"],
+.statusIcon[type="pictureInPicture"] {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.statusIcon[type="error"] {
+  min-width: 70px;
+  min-height: 60px;
+  background-image: url(chrome://global/skin/media/error.png);
+}
+
+.statusIcon[type="pictureInPicture"] {
+  min-width: 84px;
+  min-height: 84px;
+  background-image: url(chrome://global/skin/media/pictureinpicture.svg);
+  -moz-context-properties: fill, stroke;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.pictureInPictureToggleButton {
+  display: flex;
+  -moz-appearance: none;
+  position: absolute;
+  background-color: var(--pip-toggle-bgcolor);
+  color: var(--pip-toggle-text-and-icon-color);
+  border: 0;
+  padding: var(--pip-toggle-padding);
+  right: 0;
+  top: 50%;
+  translate: var(--pip-toggle-translate-x) -50%;
+  transition: opacity 160ms linear, translate 160ms linear;
+  min-width: max-content;
+  pointer-events: auto;
+  opacity: 0;
+}
+
+.pictureInPictureToggleButton[policy="hidden"] {
+  display: none;
+}
+
+.pictureInPictureToggleButton[policy="top"] {
+  top: 0%;
+  translate: var(--pip-toggle-translate-x);
+}
+
+.pictureInPictureToggleButton[policy="one-quarter"] {
+  top: 25%;
+}
+
+.pictureInPictureToggleButton[policy="three-quarters"] {
+  top: 75%;
+}
+
+.pictureInPictureToggleButton[policy="bottom"] {
+  top: 100%;
+  translate: var(--pip-toggle-translate-x) -100%;
+}
+
+.pictureInPictureToggleIcon {
+  display: inline-block;
+  background-image: url(chrome://global/skin/media/pictureinpicture.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  -moz-context-properties: fill, stroke;
+  fill: var(--pip-toggle-text-and-icon-color);
+  stroke: var(--pip-toggle-text-and-icon-color);
+  width: var(--pip-toggle-icon-width-height);
+  height: var(--pip-toggle-icon-width-height);
+  min-width: max-content;
+}
+
+.statusIcon[type="pictureInPicture"]:dir(rtl),
+.pictureInPictureToggleIcon:dir(rtl) {
+  transform: scaleX(-1);
+}
+
+.pictureInPictureToggleLabel {
+  margin-inline-start: var(--pip-toggle-padding);
+}
+
+/**
+ * For the Picture-in-Picture toggle, we don't use the built-in :hover
+ * pseudoclass because there are many sites where the arrangement of the DOM
+ * or the CSS will conspire to prevent :hover from matching on the <video>
+ * itself. PictureInPictureToggleChild takes care of punching through those
+ * barriers, and manually sets a .hovering class.
+ */
+
+.controlsOverlay.hovering > .pictureInPictureToggleButton {
+  opacity: 0.8;
+}
+
+.controlsOverlay[hidetoggle="true"].hovering > .pictureInPictureToggleButton:not(.hovering) {
+  opacity: 0;
+}
+
+.controlsOverlay.hovering > .pictureInPictureToggleButton.hovering {
+  opacity: 1;
+  translate: 0 -50%;
+}
+
+.controlsOverlay.hovering > .pictureInPictureToggleButton.hovering[policy="top"] {
+  translate: 0;
+}
+
+.controlsOverlay.hovering > .pictureInPictureToggleButton.hovering[policy="bottom"] {
+  translate: 0 -100%
+}
+
+@supports -moz-bool-pref("media.videocontrols.picture-in-picture.video-toggle.testing") {
+  /**
+   * To make automated tests faster, we drop the transition duration in
+   * testing mode.
+   */
+  .pictureInPictureToggleButton {
+    transition-duration: 10ms;
+  }
+}
+
+/* Overlay Play button */
+.clickToPlay {
+  min-width: var(--clickToPlay-size);
+  min-height: var(--clickToPlay-size);
+  border-radius: 50%;
+  background-image: url(chrome://global/skin/media/playButton.svg);
+  background-repeat: no-repeat;
+  background-position: 54% 50%;
+  background-size: 40% 40%;
+  background-color: #1a1a1a;
+  -moz-context-properties: fill;
+  fill: #ffffff;
+  opacity: 0.8;
+  position: relative;
+  top: 20px;
+}
+
+.controlsSpacerStack:hover > .clickToPlay,
+.clickToPlay:hover {
+  opacity: 0.55;
+}
+
+.controlsSpacerStack:hover > .clickToPlay[fadeout] {
+  opacity: 0;
+}
+
+.controlBar[fullscreen-unavailable] .fullscreenButton {
+  display: none;
+}
+
+.statusOverlay[fadeout],
+.statusOverlay[error] + .controlsOverlay > .controlsSpacerStack {
+  opacity: 0;
+}
+
+.pictureInPictureOverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background-color: rgb(12, 12, 13);
+}
+
+/* Status description formatting */
+.statusLabel {
+  padding: 0 10px;
+  text-align: center;
+  font: message-box;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.statusLabel {
+  display: none;
+}
+
+[status="errorAborted"]         > [id="errorAborted"],
+[status="errorNetwork"]         > [id="errorNetwork"],
+[status="errorDecode"]          > [id="errorDecode"],
+[status="errorSrcNotSupported"] > [id="errorSrcNotSupported"],
+[status="errorNoSource"]        > [id="errorNoSource"],
+[status="errorGeneric"]         > [id="errorGeneric"],
+[status="pictureInPicture"]     > [id="pictureInPicture"] {
+  display: inline;
+}
+
+@media (-moz-windows-default-theme: 0) {
+  .controlsSpacer,
+  .clickToPlay {
+    background-color: transparent;
+  }
+}
+</style>
+<!-- Stylesheet 16 !--><style type="text/css">
+/* Inline stylesheet #16 */
+/* The CSS Blockquote inline stylesheet */
+/* Rule count: 1 */
+blockquote { /* Rule 1 */
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: white;
+} /* End of rule 1 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 17 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #17 */
+/* The CSS blank divider inline stylesheet */
+/* Rule count: 1 */
+HR.blank { /* Rule 1 */
+	border: 10px solid navy;
+	border-radius: 5px;
+} /* End of rule 1 */
+/* Experiment, and add in different colors of blank headings */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 18 !-->
+<style type="text/css" lang="en">
+/* The hyperlink stylesheet (the <a href> </a> tag) *********/
+/* It would be nice to be able to name internal stylesheets */
+/* Rule count: 5 */
+/* Default link (for basic settings, and if all else fails) */
+a { /* Rule 1 */
+	color: blue;
+	font-family: "Times New Roman"; /* Don't switch back to Courier without reducing font size */
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+/* Unvisited link */
+a:link {  /* Rule 2 */
+	color: blue;
+} /* End of rule 2 */
+/* Visited link */
+a:visited {  /* Rule 3 */
+	color: purple;
+} /* End of rule 3 */
+/* Mouse over link */
+a:hover {  /* Rule 4 */
+	color: cyan;
+} /* End of rule 4 */
+/* Selected link (mouse-hold, touch-hold) */
+a:active {  /* Rule 5 */
+	color: white;
+} /* End of rule 5 */
+/* What we need:
+* a:dead (for dead links/404 pages)
+* a:visitedhover (for hovering over visited links)
+*/
+/* Future things to experiment with
+* Sounds
+* Glowing
+* Exclusion from sidebar and top navigation bar (topbar)
+*/
+/* End of the Hyperlink stylesheet */
+/* Forked from The SNU Update Log Snapshot323 (February 15th 2020, V2) */
+/* Stylesheet version: 3 (February 16th 2020) */
+</style>
+<!-- End of stylesheets !-->
+<?php
+// PHP section
+// "Echo"
+echo ("Hello World"); // Output: Hello World
+/* Or
+* "Print"
+*/
+print ("Hello World"); // Output: Hello World
+// Variable list
+$piSimple = "3.14";
+$HelloWorldStr = "Hello World";
+$HelloworldStr = "Hello world";
+$Int2__16 = "65536"; // My #1 memorized power of 2
+$Power2_16 = "65536";
+// End of variable list
+// Var list
+var x = 0; // X Coordinate
+var y = 0; // Y Coordinate
+var z = 0; // Z Coordinate
+var a = 0; // A Coordinate [4D MODE ONLY]
+// End ov Var list
+// Int list
+int testInt1 = "101";
+// End of int list
+// float list
+float decimal1 = "1.01";
+// End of float list
+// End of PHP section
+?>
+<script type="text/JavaScript" lang="en">
+// Start of script
+// Start of page JavaScript console
+console.log("SNU web console for [browser]");
+console.log("The [section] console");
+console.log(">>>");
+// End of page JavaScript console
+// End of script
+</script>
+<script type="text/JavaScript" lang="en" id="CSSRuleCountScript">
+// CSS rule count script
+inlineStyShe1 = 2; // Rule count for Inline Stylesheet 1
+inlineStyShe2 = 3; // Rule count for Inline Stylesheet 2
+inlineStyShe3 = 5; // Rule count for Inline Stylesheet 3
+inlineStyShe4 = 7; // Rule count for Inline Stylesheet 4
+inlineStyShe5 = 6; // Rule count for Inline Stylesheet 5
+inlineStyShe6 = 2; // Rule count for Inline Stylesheet 6
+inlineStyShe7 = 6; // Rule count for Inline Stylesheet 7
+inlineStyShe8 = 2; // Rule count for Inline Stylesheet 8
+inlineStyShe9 = 12; // Rule count for Inline Stylesheet 9
+inlineStyShe10 = 1; // Rule count for Inline Stylesheet 10
+inlineStyShe11 = 4; // Rule count for Inline Stylesheet 11
+inlineStyShe12 = 11; // Rule count for Inline Stylesheet 12
+inlineStyShe13 = 1; // Rule count for Inline Stylesheet 13
+inlineStyShe14 = 4; // Rule count for Inline Stylesheet 14
+inlineStyShe15 = 6; // Rule count for Inline Stylesheet 15
+inlineStyShe16 = 1; // Rule count for Inline Stylesheet 16
+inlineStyShe17 = 1; // Rule count for Inline Stylesheet 17
+inlineStyShe18 = 5; // Rule count for Inline Stylesheet 18
+inlineCount = (inlineStyShe1 + inlineStyShe2 + inlineStyShe3 + inlineStyShe4 + inlineStyShe5 + inlineStyShe6 + inlineStyShe7 + inlineStyShe8 + inlineStyShe9 + inlineStyShe10 + inlineStyShe11 + inlineStyShe12 + inlineStyShe13 + inlineStyShe14 + inlineStyShe15 + inlineStyShe16 + inlineStyShe17 + inlineStyShe18);
+console.log("CSS rule count:\nInline: " + inlineCount + " \nExternal: Coming soon");
+console.log("Inline count");
+console.log("Inline stylesheet 1: " + inlineStyShe1 + " ");
+console.log("Inline stylesheet 2: " + inlineStyShe2 + " ");
+console.log("Inline stylesheet 3: " + inlineStyShe3 + " ");
+console.log("Inline stylesheet 4: " + inlineStyShe4 + " ");
+console.log("Inline stylesheet 5: " + inlineStyShe5 + " ");
+console.log("Inline stylesheet 6: " + inlineStyShe6 + " ");
+console.log("Inline stylesheet 7: " + inlineStyShe7 + " ");
+console.log("Inline stylesheet 8: " + inlineStyShe8 + " ");
+console.log("Inline stylesheet 9: " + inlineStyShe9 + " ");
+console.log("Inline stylesheet 10: " + inlineStyShe10 + " ");
+console.log("Inline stylesheet 11: " + inlineStyShe11 + " ");
+console.log("Inline stylesheet 12: " + inlineStyShe12 + " ");
+console.log("Inline stylesheet 13: " + inlineStyShe13 + " ");
+console.log("Inline stylesheet 14: " + inlineStyShe14 + " ");
+console.log("Inline stylesheet 15: " + inlineStyShe15 + " ");
+console.log("Inline stylesheet 16: " + inlineStyShe16 + " ");
+console.log("Inline stylesheet 17: " + inlineStyShe17 + " ");
+console.log("Inline stylesheet 18: " + inlineStyShe18 + " ");
+console.log("External count");
+console.log("Coming soon");
+// End of CSS rule count script
+</script>
+<script type="Text/JavaScript" lang="en">
+function videoResolutionButton {
+	//
+}
+function videoFrameRefreshRateButton {
+	//
+}
+function captionsButtonGUI {
+	//
+}
+function qualityListCLI {
+	// This is the quality list for video quality (dimensions) adjustment through the web console
+	console.log("16x16");
+	console.log("16x20");
+	console.log("16x24");
+	console.log("20x16");
+	console.log("24x16");
+</script>
+<!-- Ruby support !-->
+<ruby type="text/ruby" lang="ja">
+
+</ruby>
+<!--
+<ruby>
+<rt>
+<rp></rp>
+</rt>
+</ruby>
+!-->
+<!-- XML support !-->
+<xml type="text/xml" lang="en">
+
+</xml>
+<!-- Divider !-->
+<TITLE lang="en">SNU Video Player test site</TITLE><!-- Page title (remember to change this) !-->
+</HEAD>
+<!-- End of embedded scripting !-->
+<BODY BGCOLOR="NAVY"> <!-- Background color !-->
+<!-- Brief color list
+Black (000000)
+<BODY BGCOLOR="BLACK">
+White (FFFFFF)
+<BODY BGCOLOR="WHITE">
+Cyan (00FFFF)
+<BODY BGCOLOR="CYAN">
+Navy (000080)
+<BODY BGCOLOR="NAVY">
+Dark grey (333333)
+<BODY BGCOLOR="DARKGRAY">
+Light grey (777777)
+<BODY BGCOLOR="LIGHTGRAY">
+Red (FF0000)
+<BODY BGCOLOR="RED">
+Green (00FF00)
+<BODY BGCOLOR="GREEN">
+Turquiose (40E0D0)
+<BODY BGCOLOR="TURQUIOSE">
+Silver (######)
+<BODY BGCOLOR="SILVER">
+!-->
+<BODY BACKGROUND=".png"><!-- Background image !--> <!-- Allowed formats: .png .jpg .jpe .jif .gif .bmp .dib .tif .tiff !-->
+<!-- Top navigation bar !-->
+<div class="topnav">
+<a class="active" href="">[SNU Video Player Home]</a><!-- Try to make the name stretch over the entire sidebar to near perfection !-->
+<a href="#PLACEHOLDER">(</a>
+<a href="about:blank">❎ Exit SNU</a><!-- empty link !--><!-- This button always exits the current SNU tab. This should be a built-in page on every browser (guaranteed to work on Chromium/Google Chrome and Mozilla Firefox !-->
+<a href="../../!SNU2DSTART.html">⛺ <!-- Home page of mode !-->Home</a>
+<a href="#PLACEHOLDER">)</a>
+<i><a href="SNU_Video_Player_Home.html">The testing page for the SNU Video player</a></i>
+<!-- Make sure it stays on a single line for all displays (until I can get a scrollbar in) try testing on displays with 1336 pixel width like I am !-->
+</div>
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<ul>
+<!-- <HR> !-->
+<!-- Page title section can go here as well if desired !-->
+<!-- <HR> !-->
+<img src="SampleIcon1.png" alt="Logo_Profile_Icon" width="225" height="225">
+<HR>
+<li lang="en"><a class="active" href="#home"> </a></li>
+<HR>
+<details>
+	<summary><li lang="en"><a href="#EXPLORE">SNU Video Player Homepage Page INDEX</a></li></summary>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li id="">(Page navigation)</a></li></summary>
+	<li lang="en"><a href="#Top">Top of the page</a></li>
+	<li lang="en"><a href="#VideoPlayerMain">Video player</a></li>
+	<li lang="en"><a href="#SnapshotSection">Snapshot section</a></li>
+	<li lang="en"><a href="#Bottom">Bottom of the page</a></li>
+	</details>
+	<!--
+	<li lang="en"><HR></li>
+	<details><summary><li id="">Section 2 title</a></li></summary>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li id="">Section 3 title</a></li></summary>
+	</details>
+	!-->
+	<li lang="en"><HR></li>
+	<nav>
+	<li lang="en">* Section 1 (Page navigation)</li>
+	<!--
+	<li lang="en">* Section 2 (Name of section here)</li>
+	<li lang="en">* Section 3 (Name of section here)</li>
+	!-->
+	</nav>
+	<HR>
+	<li lang="en">Copyright SeanWallaWalla (2015-2019)</li>
+	<li lang="en">Copyleft SeanWallaWalla (2019-2020)</li>
+	<li lang="en">SNU (2018-2020)</li>
+	<HR>
+</ul>
+<!-- End of sidebar and topbar section !-->
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<!-- Page content starts here !-->
+<HR>
+<!-- File info (default)
+Line indent style: Unix (LF)
+Languages: HTML5, HTML4, CSS3, JS1.8, RUBY2.6, PHP 7.3
+Derived from: Sourcebase_SNUScriptStarter (version 1.07)
+!-->
+<section>
+<header>
+<H1 lang="en"><button><H3 lang="en"><a href="../SNU_Video_Home.html">Go back</a></H3></button></H1>
+<H1 lang="en" id="Top" lang="en">SNU Video Player homepage<a href="#Top">¶</a></H1>
+<p lang="en">This page is derived from SourceBase/SNU WebStandard HTML T-1.14 and may contain some template elements. Make sure to point them out when found and use the latest version of the page.</p>
+</header>
+</section>
+<HR>
+<!--
+Resolution:
+X = [User input]
+Y = [User input]
+Z = [User input]
+Auto = Adjust to device resolution and network speed
+Default - Adjust to device resolution
+
+Framerate:
+1-30000
+!-->
+<section>
+<!--
+! START ADDING A TRANSLATION TO THE LANGUAGE NAME NEXT TO THE LATINIZATION OF EACH LANGUAGE NAME
+!-->
+<!-- Subtitle issue fixed April 15th 2020
+the issue:
+the source tag was written as source=" and not source src="
+!-->
+<p lang="en"><a href="Notes/SNU_VIDEOPLAYER_2.26.2020PLANS.txt">Original notes from February 26th 2020</a></p>
+<HR id="VideoPlayerMain">
+<video src="../../../Accessibility/Captions/VTTCAPTEST2.25.2020/CAPTIONTEST1PROJECT.mp4" type="video/mp4" width="1920" height="1080" controls>
+	<source src="../../../Accessibility/Captions/VTTCAPTEST2.25.2020/CAPTIONTEST1PROJECT.mp4" type="video/mp4"><!--width="1920" height="1080"!-->
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="aa" label="A section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ab" label="Abkhazian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="aa" label="Afar">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="af" label="Afrikaans (Afrikaans)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ak" label="Akan">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sq" label="Albanian (shqiptar)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="am" label="Amharic (አማርኛ)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ar" label="Arabic (عربى)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="an" label="Aragonese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="hy" label="Armenian (հայերեն)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="as" label="Assamese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="av" label="Avaric">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ae" label="Avestan">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ay" label="Aymara">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="az" label="Azerbaijan (Azərbaycan)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bb" label="B section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bm" label="Bambara">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ba" label="Bashkir">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="eu" label="Basque (Euskal)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="be" label="Belarusian (Беларус)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bn" label="Bengali (Bangla)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bh" label="Bihari">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bi" label="Bislama">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bs" label="Bosnian (Bosanski)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="br" label="Breton">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bg" label="Bulgarian (български)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="my" label="Burmese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="cc" label="Section C"><!-- A new SNU practice is to write "Section C" instead of "C section" as it sounds too much like the medical procedure !-->
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ca" label="Catalan (Català)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ch" label="Chamorro">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nu" label="Chichewa, Chewa, Nyanja">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="zh" label="Chinese (Mandarin)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="zh-Hans" label="Chinese (Simplified)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="zh-Hant" label="Chinese (Traditional)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="en" label="Cantonese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="cv" label="Chuvash">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kw" label="Cornish">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="co" label="Corsican">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="cr" label="Cree">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="hr" label="Croatian (Hrvatski)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="cs" label="Czech (čeština)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="dd" label="D section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="da" label="Danish">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="dv" label="Divehi, Dhivehi, Maldivian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nl" label="Dutch (Nederlands)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="dz" label="Dzongkha">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ee" label="E section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="en" label="English (US)">
+	<track src="WebVTT/en-UK/TestVTT-en-UK.vtt" kind="subtitles" srclang="en" label="English (UK)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="eo" label="Esperanto (Esperanto)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="et" label="Estonian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ee" label="Ewe">	
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ff" label="F section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="fo" label="Faroese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="fj" label="Fijian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="fi" label="Finnish">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="fr" label="French (Française, Français)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ff" label="Fula, Fulah, Pulaar, Pular">	
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gg" label="G section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gl" label="Galician (Galego)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gd" label="Gaelic (Scottish) (Gàidhlig na h-Alba)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gv" label="Gaelic (Manx)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ka" label="Georgian (ქართული)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="de" label="German (Deutsche)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="el" label="Greek (Ελληνικά)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kl" label="Greenlandic">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gn" label="Guarani">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gu" label="Gujarati">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="hh" label="H section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="haw" label="Hawaiian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="he" label="Hebrew (עברית)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="hi" label="Hindi (हिन्दी)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ht" label="Haitian Creole">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ha" label="Hausa">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ho" label="Hiri Motu">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="hu" label="Hungarian (Magyar)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ii" label="I section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="is" label="Icelandic (Íslensku)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="io" label="Ido">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ig" label="Igbo (Ndi Igbo)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="id" label="Indonesian (id) (bahasa Indonesia)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="in" label="Indonesian (in) (bahasa Indonesia)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ia" label="Interlingua">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ie" label="Interlingue">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="iu" label="Inuktitut ">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ik" label="Inupiak">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ga" label="Irish (Gaeilge)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="it" label="Italian (Italiana) (Italiano)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="jj" label="J section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ja" label="Japanese (Kanji, 日本人)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="jv" label="Javanese (Jepang)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kk" label="K section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kl" label="Kalaallisut, Greenlandic">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kn" label="Kannada">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kr" label="Kanuri">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ks" label="Kashmiri">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kk" label="Kazakh">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="km" label="Khmer">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ki" label="Kikuyu">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="rw" label="Kinyarwanda (Rwanda)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="rn" label="Kirundi">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ky" label="Kyrgyz">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kv" label="Komi">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kg" label="Kongo">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ko" label="Korean (South, 한국어)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ko" label="Korean (North, 조선말/朝鮮말)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ku" label="Kurdish (Kurdî)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="kj" label="Kwanyama">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ll" label="L section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="lo" label="Lao">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="la" label="Latin (Latine)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="lv" label="Latvian (Lettish)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="li" label="Limburgish (Limburger)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ln" label="Lingala">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="lt" label="Lithuanian (Lietuvis)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="lu" label="Luga-Katanga">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="lg" label="Luganda, Ganda">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="lb" label="Luxembourgish (Lëtzebuergesch)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mm" label="M section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="gv" label="Manx">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mk" label="Macedonian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mg" label="Malagasy">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ms" label="Malay">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ml" label="Malayalam">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mt" label="Maltese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mi" label="Maori">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mr" label="Marathi">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mh" label="Marshallese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mo" label="Moldavian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="mn" label="Mongolian (Монгол)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nn" label="N section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="na" label="Nauru">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="na" label="Navajo">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ng" label="Ndonga">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nd" label="Northern Ndebele">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ne" label="Nepali">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="no" label="Norwegian (norsk)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nb" label="Norwegian bokmål">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nn" label="Norwegian nynorsk">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ii" label="Nuosu">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="oo" label="O section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="oc" label="Occitan">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="oj" label="Ojibwe">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="cu" label="Old Church Slavonic, Old Bulgarian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="or" label="Oriya">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="om" label="Oromo (Afaan Oromo)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="os" label="Ossetian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="pp" label="P section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="pi" label="Pāli">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ps" label="Pashto, Pushto (پښتو)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="fa" label="Persian (فارسی)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="pl" label="Polish (Polskie)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="pt" label="Portuguese (Portuguesa, Português)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="pa" label="Punjabi (Eastern)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="qq" label="Q section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="qu" label="Quechua">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="rr" label="R section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="rm" label="Romansh">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ro" label="Romanian (Română)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ru" label="Russian (русский)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ss" label="S section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="se" label="Sami">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sm" label="Samoan">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sg" label="Sango">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sa" label="Sanskrit">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sr" label="Serbian (Српски)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sh" label="Serbo-Croatian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="st" label="Sesotho">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tn" label="Setswana">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sn" label="Shona">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="yi" label="Sichuan (Yi)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ii" label="Sichuan (Ii)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sd" label="Sindhi">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="si" label="Sinhalese">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ss" label="Siswati">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sk" label="Slovak">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sl" label="Slovenian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="so" label="Somali">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="nr" label="Southern Ndebele">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="es" label="Spanish (Española, Español)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="su" label="Sundanese (Urang Sunda)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sw" label="Swahili (Kiswahili)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ss" label="Swati">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="sv" label="Swedish (Svenska)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tt" label="T section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tl" label="Tagalog">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ty" label="Tahitian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tg" label="Tajik (Точик)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ta" label="Tamil (தமிழ்)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tt" label="Tatar (Татар)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="te" label="Telugu (తెలుగు)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="th" label="Thai (ไทย)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="bo" label="Tibetan">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ti" label="Tigrinya">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="to" label="Tonga">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tt" label="Tsonga">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tr" label="Turkish (Türk)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tk" label="Turkmen (Türkmenler)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="tw" label="Twi">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="uu" label="U section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ug" label="Uyghur (ئۇيغۇر)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="uk" label="Ukrainian (Українська)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ur" label="Urdu (اردو)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="uz" label="Uzbek (O'zbek)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="vv" label="V section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ve" label="Venda">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="vi" label="Vietnamese (Tiếng Việt)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="vo" label="Volapük">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ww" label="W section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="wa" label="Wallon">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="cy" label="Welsh (Cymraeg)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="wo" label="Wolof">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="fy" label="Western Frisian">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="xx" label="X section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="xh" label="Xhosa (isiXhosa)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="yy" label="Y section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="yi" label="Yiddish [yi] (יידיש)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="ji" label="Yiddish [ji] (יידיש)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="yo" label="Yoruba (Yoruba)">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="zz" label="Z section">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="za" label="Zhuang, Chuang">
+	<track src="WebVTT/en-US/TestVTT-en-US.vtt" kind="subtitles" srclang="zu" label="Zulu (IsiZulu)">
+	Your browser does not support the video tag, there was an error loading the video, or the video was blocked
+</video>
+<p lang="en">Video player under construction</p>
+<p lang="en"><a href="CSS/Firefox_VideoControls.css">Firefox video CSS (preloaded) [view source]</a></p>
+<p lang="en">Button system example goes here</p>
+<p lang="en">Current issues:</p>
+<p lang="en">* Not all languages have the correct tags</p>
+<p lang="en">* Captions option isn't available, I have been truing to figure out why.</p>
+<textarea rows="128" cols="32">
+
+SNU Video player
+
+Write in: CSS, JS, Python, PHP
+
+Options
+
+{
+Captions (VTT, Other)
+Quality option (hide full numbers, 16p, 32p, 48p, 64p, 72p, 144p, 240p, 288p, 360p, 480p, 540p, 620p, 720p [HD], 800p, 900p, 1080p [FHD]. 1200p, 1440p [QHD/WQHD], 2160p [UHD], 4320p [???], 8640p [???], 17280p [???], xxxxxp [???], xxxxxp ]???, auto, max)
+Frames Per Second (auto, max, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 30, 36, 48, 52, 54, 60, 72, 90, 120, 240, 300, 600, 1000, 2000, 3000, 4000, 5000, ... 60000)
+| Download | Save | Ratings | User ratings | Share | Reviews | Metadata | Stats | Content rating | Cast | Exit | Loop (1, x, pi) | brightness | volume control |
+Color (Mono, Greyscale, RGB, 4 bit, 8 bit, 12 bit, 16 bit, 24 bit, 32 bit, 48 bit, 64 bit)
+Audio (Mono, stereo, 0bps, max: 16Mbps)
+Picture in Picture (Enable/Disable)
+Frame by Frame
+Subtitles
+Speed (0.01x-12.00x)
+Pause, buffer, fullscreen
+Minimal mode
+Aspect ratio (1:1, 4:3, 21:7, fill, fit, auto)
+Description
+Annotations
+Lock, Unlock page objects
+Audiotracks + line graph
+Audio bitrate/Video bitrate/Video
+360/VR
+Player modes: YouTube, FaceBook, Instagram, Reddit, SNU, Twitter, Plain HTML, Wikimedia, VLC
+}
+</textarea>
+</section>
+<HR>
+<!--
+Translations 4.15.2020
+German - Deutsche
+Azerbaijani - Azərbaycan
+Arabic - عربى
+Armenian - հայերեն
+Amharic - አማርኛ
+Albanian - shqiptar
+Afrikaans - Afrikaans
+French F - Française
+French M - Français
+Zulu - IsiZulu
+Japanese - 日本人
+Javanese - Jepang
+Polish - Polskie
+Spanish F - Española
+Spanish M - Español
+Swahili - Kiswahili
+Swedish - svenska
+Hebrew - עברית
+Turkish - Türk
+Vietnamese - Tiếng Việt
+Greek - Ελληνικά
+Latin - Latine
+Russian - русский
+Ukrainian - Українська
+South Korean - 한국어
+!-->
+<section>
+<H1 lang="en">Warning!</H1>
+<p lang="en">Language translations currently are done through Google Translate and may be inaccurate. DeepL isn't working for me, and I can't find a good alternate.</p>
+<p lang="en">ISO language codes - reference=w3schools.com</p>
+</section>
+<HR>
+<section>
+<H1 lang="en">Development testing</H1>
+<H2 lang="en">This is a list of developments that were brought to the video player after external research.</H2>
+<p lang="en"><a href="../../../Accessibility/Captions/VTTCAPTEST2.25.2020/VTT_FEB25_2020TEST.html">Test of WebVTT captions (test started February 25th 2020)</a></p>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en" id="SnapshotSection" lang="en">View older versions of this page<a href="#SnapshotSection">¶</a></H2></summary>
+<H3 lang="en">Snapshots 1 to 10</H3>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot1.html">Snapshot 1 (April 6th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot2.html">Snapshot 2 (April 7th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot3.html">Snapshot 3 (April 13th 220)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot4.html">Snapshot 4 (April 14th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot5.html">Snapshot 5 (April 15th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot6.html">Snapshot 6 (April 16th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot7.html">Snapshot 7 (April 17th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot8.html">Snapshot 8 (April 18th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot9.html">Snapshot 9 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot10.html">Snapshot 10 (No date)</a></button></H4>
+<H3 lang="en">Snapshots 11 to 20</H3>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot11.html">Snapshot 11 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot12.html">Snapshot 12 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot13.html">Snapshot 13 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot14.html">Snapshot 14 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot15.html">Snapshot 15 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot16.html">Snapshot 16 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot17.html">Snapshot 17 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot18.html">Snapshot 18 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot19.html">Snapshot 19 (No date)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Video_Player_Home_Snapshot20.html">Snapshot 20 (No date)</a></button></H4>
+</details>
+</section>
+<HR>
+<section>
+<header>
+<!-- Bottom of page !-->
+<H1 lang="en" id="Bottom" lang="en">You have reached the bottom of this page.</H1>
+</header>
+</section>
+<HR>
+<footer>
+<!--<p lang="en">Footer content here</p>!-->
+<p lang="en">Footer not yet set up</p>
+<!-- Footer can be pinned or unpinned, pinned footer scripting is unavailable right now !-->
+</footer>
+<!-- "Blank" test !-->
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<HR>
+<section>
+<p lang="en">Middle of blank line test</p>
+</section>
+<HR>
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<HR>
+<!-- End of "Blank test !-->
+<!-- Bottom script (filler) !-->
+</BODY>
+<!-- </BODY> !-->
+</HTML>
+<!-- Bottom script (filler) !-->
+<!-- end of script !-->
+<!-- Some blank space for the compiler !-->
+ 
+  
+   
+	
