@@ -1,0 +1,30 @@
+SNU Video player
+
+Write in: CSS, JS, Python, PHP
+
+Options
+
+{
+Captions (VTT, Other)
+Quality option (hide full numbers, 16p, 32p, 48p, 64p, 72p, 144p, 240p, 288p, 360p, 480p, 540p, 620p, 720p, 800p, 900p, 1080p. 1200p, 1440p, 2160p, 4320p, 8640p, 17280p, 34260p, 69120p, auto, max)
+Frames Per Second (auto, max, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 30, 36, 48, 52, 54, 60, 72, 90, 120, 240, 300, 600, 1000, 2000, 3000, 4000, 5000, ... 60000)
+| Download | Save | Ratings | User ratings | Share | Reviews | Metadata | Stats | Content rating | Cast | Exit | Loop (1, x, pi) | brightness | volume control |
+Color (Mono, Greyscale, RGB, 4 bit, 8 bit, 12 bit, 16 bit, 24 bit, 32 bit, 48 bit, 64 bit)
+Audio (Mono, stereo, 0bps, max: 16Mbps)
+Picture in Picture (Enable/Disable)
+Frame by Frame
+Subtitles
+Speed (0.01x-12.00x)
+Pause, buffer, fullscreen
+Minimal mode
+Aspect ratio (1:1, 4:3, 21:7, fill, fit, auto)
+Description
+Annotations
+Lock, Unlock page objects
+Audiotracks + line graph
+Audio bitrate/Video bitrate/Video
+360/VR
+Player modes: YouTube, FaceBook, Instagram, Reddit, SNU, Twitter, Plain HTML, Wikimedia, VLC
+}
+
+====================================================================================================
